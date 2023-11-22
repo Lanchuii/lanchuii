@@ -8,10 +8,6 @@ I'm an aspiring full-stack developer with a passion for programming and and exci
 
 - 📫 How to reach me **lanzmontelibano21@gmail.com**
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
-
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> 
