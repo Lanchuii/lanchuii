@@ -2,7 +2,7 @@
 <h3>Computer Science graduate from USLS, Bacolod City</h3>
 I'm an aspiring full-stack developer with a passion for programming and and excited to learn new things. 
 
-- 🔭 I’m currently working on [a scheduler I made for my church's worship team](https://github.com/Lanchuii/ws-frontend)
+- 🔭 I’m currently working on [a scheduler I made for my church's worship team](https://github.com/Lanchuii/ws-frontend) Click [this](https://tllcc-worship-sched.onrender.com/) to see the App!
 
 - 🌱 I’m currently learning **React and Node with TypeScript**
 
