@@ -1,5 +1,6 @@
 <h1 align="center">Hi 👋, I'm Lanz</h1>
-<h3 align="center">Computer Science graduate from USLS, Bacolod City</h3>
+<h3>Computer Science graduate from USLS, Bacolod City</h3>
+I'm an aspiring full-stack developer with a passion for programming and and excited to learn new things. 
 
 - 🔭 I’m currently working on [a scheduler I made for my church's worship team](https://github.com/Lanchuii/ws-frontend)
 
