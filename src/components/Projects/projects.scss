@@ -1,0 +1,40 @@
+.projects {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 120px;
+  background: 
+    repeating-linear-gradient(
+      150deg, 
+      #f6dcac 0%, #f6dcac 44%, 
+      #8cb5ad 44%, #8cb5ad 46%,
+      #006d84 46%, #006d84 48%,
+      #084d74 48%, #084d74 50%,
+      #8cb5ad 50%, #8cb5ad 52%,   
+      #006d84 52%, #006d84 54%,
+      #084d74 54%, #084d74 56%,
+      #f6dcac 56%, #f6dcac 100%
+      );
+
+  .project-container {
+    background-color: #e8d7d0ef;
+    margin: auto;
+    max-width: 1200px;
+    padding-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+
+    .project-list {
+      padding: 20px;
+    }
+
+    .project-view {
+      height: 500px;
+      width: 600px;
+      border: solid 4px #036977;
+      border-radius: 10px;
+    }
+  }
+}
