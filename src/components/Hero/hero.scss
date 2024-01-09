@@ -18,7 +18,21 @@
       justify-content: center;
 
       .logos {
-        font-size: 30px;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        .profile-icon {
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+          }
+        }
       }
 
       h1 {
