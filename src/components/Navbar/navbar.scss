@@ -15,15 +15,16 @@
   .nav-item {
     font-weight: 700;
     position: relative;
-    
+
   }
+
   .underline {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     height: 3px;
-    border-radius: 15px; 
+    border-radius: 15px;
     background: #d52429;
     opacity: 0.85;
   }
@@ -32,5 +33,63 @@
     text-decoration: none;
     color: #d52429;
   }
+}
 
+.nav-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  visibility: hidden;
+  color: #d52429;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  visibility: hidden;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    visibility: hidden;
+  }
+
+  .nav-button {
+    visibility: visible;
+  }
+
+  .sidebar {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    .bg {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: antiquewhite;
+
+      .links {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;  
+      }
+
+      a {
+        font-size: 30px;
+      }
+    }
+  }
 }

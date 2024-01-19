@@ -2,6 +2,7 @@
   display: flex;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 
   .wrapper {
     height: 100%;
@@ -75,6 +76,27 @@
         padding: 10px;
         height: 300px;
         border-radius: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      height: 50%;
+      flex-direction: column;
+      gap: 0px;
+      padding: 20px;;
+      justify-content: space-around;
+
+      .text-container {
+        position: relative;
+        align-items: center;
+        text-align: center;
+      }
+
+      .img-container {
+        img {
+            height: 350px;
+            border-radius: 20px;
+        }
       }
     }
   }

@@ -1,6 +1,7 @@
 import './navbar.scss'
 import { motion, Variants } from 'framer-motion'
 import NavItem from './NavItem'
+import Sidebar from './Sidebar';
 
 const navItems = ["Home", "About", "Projects", "Tools"]
 
@@ -24,22 +25,23 @@ interface Props {
   setSelected: React.Dispatch<React.SetStateAction<number>>
 }
 
-const Navbar = ({selected, setSelected}: Props) => {
+const Navbar = ({ selected, setSelected }: Props) => {
 
   return (
-    <div className="navbar">
-      <motion.h2 variants={variants} initial='initial' animate='animate'>Lanchuii</motion.h2>
-      <motion.div className='nav-items' variants={variants} initial='initial' animate='animate'>
+    <motion.div className="navbar" variants={variants} initial='initial' animate='animate'>
+      <motion.h2>Lanchuii</motion.h2>
+      <motion.div className='nav-items'>
         {navItems.map((item, i) => (
-          <NavItem 
+          <NavItem
             key={i}
             text={item}
             selected={selected === i}
-            onClick={()=>setSelected(i)}
+            onClick={() => setSelected(i)}
           />
         ))}
       </motion.div>
-    </div>
+      <Sidebar navItems={navItems} />
+    </motion.div>
   )
 }
 

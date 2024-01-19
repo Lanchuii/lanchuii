@@ -1,9 +1,11 @@
 import './app.scss'
 import { useState } from 'react'
+import ProjectData from "./shared/projectData"
 import About from './components/About/About'
 import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 import Projects from './components/Projects/Projects'
+import Tools from './components/Tools/Tools'
 
 const App = () => {
   const [selected, setSelected] = useState<any>()
@@ -23,11 +25,20 @@ const App = () => {
         <About 
         />
       </section>
-      <section id="Projects">
-        <Projects />
+        {ProjectData.map((project, i) => (
+          <Projects
+            key={i}
+            projectTitle={project.title}
+            projectImage={project.image}
+            projectDescription={project.description}
+            projectTech={project.tech}
+            projectGithub={project.githubLink}
+            projectLive={project.liveLink}
+          />
+        ))}
+      <section id="Tools">
+        <Tools />
       </section>
-      <section id="Tools">Tools</section>
-      <section id="contact">Contact me</section>
     </div>
   )
 }
